@@ -68,13 +68,13 @@ div:nth-child(12) {
   background-color: #DE212F;
 }
 
-/* @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   body {
     grid-template-columns: none;
     grid-template-rows: none;
   }
-  div {
+  div:nth-child(n), div:first-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-} */
+}
