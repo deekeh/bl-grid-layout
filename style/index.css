@@ -17,6 +17,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 5fr 4fr 3fr;
   gap: 10px;
+  padding: 10px;
 }
 
 body * {
@@ -24,20 +25,48 @@ body * {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  padding-top: 10px;
+  border-radius: 8px;
 }
 
 .navbar {
+  background-color: #A8FEEB;
   grid-column: span 4;
 }
 
 .sidebar {
+  background-color: #17FFFF;
   grid-row: span 3;
 }
 
 .main {
+  background-color: #84FEFF;
   grid-column: span 3;
+}
+
+.content1 {
+  background-color: #70FFD3;
+}
+
+.content2 {
+  background-color: #64FFDB;
+}
+
+.content3 {
+  background-color: #73FEBA;
 }
 
 .footer {
   grid-column: span 3;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+  body * {
+    grid-row: auto / auto !important;
+    grid-column: auto / auto !important;
+  }
 }
